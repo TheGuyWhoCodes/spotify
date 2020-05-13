@@ -43,4 +43,25 @@ mat-button-toggle-group {
 
 mat-button-toggle-group {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .login-button {
+    border-radius: 18px;
+    border: none;
+    color:white;
+    font-size: 22px;
+    padding: 12px;
+    background-color:black;
+    -webkit-box-shadow: 7px 7px 17px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 17px -6px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 17px -6px rgba(0,0,0,0.75);
+    margin:1em;
+}
+canvas{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+
+    border: solid 1px blue;  
+    width: 100%;
   }

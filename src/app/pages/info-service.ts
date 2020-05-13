@@ -14,6 +14,7 @@ export class InfoService {
   private apiUserUrl: string = 'https://api.spotify.com/v1/me';
   private apiAlbumsUrl: string = 'https://api.spotify.com/v1/me/albums';
   private apiQuarantine: string = 'https://api.spotify.com/v1/me/top/tracks';
+  private apiQuarantineArtists: string = 'https://api.spotify.com/v1/me/top/artists';
 
   private user: {} = {};
   private user$: BehaviorSubject<{}>;
@@ -44,6 +45,20 @@ export class InfoService {
 
   public fetchTopQuarantineTracks(): Observable<{}>{
     return this.http.get(this.apiQuarantine, {
+        params: {
+          limit: '4',
+          time_range: "short_term"
+        }
+      }).pipe(
+      tap((user: {}) => {
+        this.user$.next(this.user); 
+      }),
+      catchError(this.handleError('getSelfAlbums'))
+    );
+  }
+
+  public fetchTopQuarantineArtists(): Observable<{}>{
+    return this.http.get(this.apiQuarantineArtists, {
         params: {
           limit: '4',
           time_range: "short_term"

@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
         const ac:  AuthConfig  = {
             client_id:  "8488d51a53dd43fe85935f65579801cb", 
             response_type:  "token",
-            redirect_uri:  "http://localhost:4202/authorized", 
+            redirect_uri:  "http://ariagno.com/spotify/authorized", 
             state:  "",
             show_dialog:  true,
             scope:  scopes
