@@ -14,13 +14,15 @@
                     <div [hidden] = "selectedVal != 'track'">
                         <h3>These are the tracks getting you through isolation…</h3>
                         <h6>Share them on Instagram, nominate your friends to take the challenge and tag your favourite artists to show your support!</h6>
-                        <canvas #canvas>.</canvas>     
+                        <canvas #canvas>.</canvas>
+                        <img src = "{{tracksOutput}}">     
                         <button (click) = "saveCanvasAs(canvas, 'export.png')" class = "login-button">Download!</button>
                     </div>
                     <div [hidden] = "selectedVal == 'track'">
                         <h3>These are the artists getting you through isolation…</h3>
                         <h6>Share them on Instagram, nominate your friends to take the challenge and tag your favourite artists to show your support!</h6>
                         <canvas #artistCanvas>.</canvas>     
+                        <img src = "{{artistOutput}}">     
                         <button (click) = "saveCanvasAs(artistCanvas, 'export.png')" class = "login-button">Download!</button>
                     </div>
                 </div>

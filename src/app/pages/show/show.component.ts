@@ -19,6 +19,9 @@ export class ShowComponent implements OnInit, OnDestroy {
 
   public  artists: {} = {};
   public  tracks: {} = {};
+
+  public tracksOutput: string = ""
+  public artistOutput: string = ""
   @ViewChild('canvas', {static: false}) canvas: ElementRef;
   @ViewChild('artistCanvas', {static: false}) artistCanvas: ElementRef;
 
@@ -139,7 +142,8 @@ public mergeImages() {
         context.fillStyle = "black";  //<======= and here
         context.fillText(this.tracks["items"][2]["artists"][0]["name"], 350, 1015);
 
-
+        console.log(canvas.toDataURL())
+        this.tracksOutput = canvas.toDataURL()
     };        
       
     background.src = 'assets/untitled.png';
@@ -179,10 +183,12 @@ public mergeArtistImages() {
         context.fillText(this.artists["items"][0]["name"], 350, 370);
         context.fillText(this.artists["items"][1]["name"], 350, 680);
         context.fillText(this.artists["items"][2]["name"], 350, 990);
+        this.artistOutput = canvas.toDataURL()
 
     };        
       
     background.src = 'assets/artist.png';
+    
 }
     public saveCanvasAs(canvas, fileName) {
         // get image data and transform mime type to application/octet-stream
