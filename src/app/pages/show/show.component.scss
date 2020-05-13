@@ -1,0 +1,46 @@
+.background {
+    background: linear-gradient(180deg, #4b6cb7 0%, #182848 100%);
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    z-index:-1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.button {
+    background-color:#4b6cb7;
+    margin:2em;
+}
+.wrapper {
+    z-index:1;
+    padding-top:3em;
+    width:70%;
+    margin-top:4em !important;
+    margin:0 auto;
+    text-align: center;
+    padding:1em;
+    background-color:white;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+
+.mat-button-toggle-checked {
+    background-color:rgb(190, 190, 190)!important;
+}
+.mat-button-toggle-appearance-standard {
+    background-color:rgb(221, 221, 221);
+    color:black;
+}
+
+mat-button-toggle-group {
+    padding:1em;
+    margin: 0 auto !important;
+}
+
+mat-button-toggle-group {
+    flex-wrap: wrap;
+  }

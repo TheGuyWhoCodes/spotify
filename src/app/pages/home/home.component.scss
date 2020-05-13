@@ -1,0 +1,38 @@
+.hero {
+    height:100vh;
+    width:100vw;
+    background: linear-gradient(180deg, #4b6cb7 0%, #182848 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    color:white;
+    line-height: 1.25;
+    padding-bottom:.75em;
+    font-size: 1.875rem;
+}
+.login-button {
+    border-radius: 18px;
+    border: none;
+    color:black;
+    font-size: 22px;
+    padding: 12px;
+    background-color:white;
+    -webkit-box-shadow: 7px 7px 17px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 17px -6px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 17px -6px rgba(0,0,0,0.75);
+    margin:1em;
+}
+
+h3 {
+    color:white;
+}
+.px-6 {
+    width:80%;
+    margin: 0 auto;
+
+}

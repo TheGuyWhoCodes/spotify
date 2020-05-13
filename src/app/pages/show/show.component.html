@@ -1,0 +1,23 @@
+<!-- <div *ngIf = "hasRecent()">
+    {{getRecent}}
+</div> -->
+
+<div class = "background"></div>
+<div class = "container">
+    <div class = "wrapper">
+        <div *ngIf = "!loading">
+            <div *ngIf = "isLoggedIn != false">
+                <mat-button-toggle-group #group="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" [value]="selectedVal" (change)="onValChange(group.value)">
+                    <mat-button-toggle value="artist"><i class="fas fa-user-alt"></i> Top Quarantine Artists</mat-button-toggle>
+                    <mat-button-toggle value="track"><i class="fas fa-music"></i> Top Quarantine Tracks</mat-button-toggle>
+                </mat-button-toggle-group>
+                <h3>These are the tracks getting you through isolation…</h3>
+                <h6>Share them on Instagram, nominate your friends to take the challenge and tag your favourite artists to show your support!</h6>
+            </div>
+
+            <div *ngIf = "isLoggedIn != true">
+                <h3>Oops! You aren't logged into Spotify, go <a href = "/">home</a> to login!</h3>
+            </div>
+        </div>
+    </div>
+</div>
