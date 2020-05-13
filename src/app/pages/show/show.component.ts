@@ -125,7 +125,7 @@ public mergeImages() {
         context.drawImage(img2, 35, 300, albumSize, albumSize);
         context.drawImage(img3, 35, 600, albumSize, albumSize);
         context.drawImage(img4, 35, 890, albumSize, albumSize);
-        context.font = " bold 30px Poppins";
+        context.font = " bold 20px Poppins";
         context.fillStyle = "white";  //<======= and here
 
         context.fillText(this.tracks["items"][0]["name"], 327, 352);
@@ -179,7 +179,7 @@ public mergeArtistImages() {
         context.drawImage(img2, 35, 300, albumSize, albumSize);
         context.drawImage(img3, 35, 600, albumSize, albumSize);
         context.drawImage(img4, 35, 890, albumSize, albumSize);
-        context.font = " bold 30px Poppins";
+        context.font = " bold 20px Poppins";
         context.fillText(this.artists["items"][0]["name"], 350, 370);
         context.fillText(this.artists["items"][1]["name"], 350, 680);
         context.fillText(this.artists["items"][2]["name"], 350, 990);
